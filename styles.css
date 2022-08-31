@@ -42,7 +42,12 @@ h2 {
   font-size: 15px;
 }
 
+.cards {
+  margin-top: 4rem;
+}
+
 .card {
+  width: 305px;
   border-radius: 5px;
   margin-bottom: 1.5rem;
   padding: 1.5rem;
@@ -91,4 +96,60 @@ h2 {
   display: flex;
   margin-top: 2rem;
   justify-content: end;
+}
+
+footer {
+  margin: 2rem 0;
+}
+
+@media (min-width: 1440px) {
+  main {
+    width: 1100px;
+  }
+
+  h1,
+  h2 {
+    font-size: 2.25rem;
+  }
+
+  .content p {
+    width: 48%;
+    margin: 1.5rem auto;
+  }
+
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+
+  .card.tema-builder,
+  .card.karma {
+    grid-column: 2/3;
+  }
+
+  .card.supervisor {
+    position: relative;
+    top: 141px;
+  }
+
+  .card.calculator {
+    position: relative;
+    bottom: 141px;
+  }
+
+  .card {
+    width: 350px;
+    height: 250px;
+    margin-bottom: 0;
+  }
+
+  .card p {
+    padding-right: 1rem;
+  }
+
+  .card .image {
+    position: relative;
+    bottom: -2rem;
+  }
 }
